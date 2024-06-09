@@ -8,6 +8,7 @@ import { ConfigService } from '@nestjs/config';
 
 @Injectable()
 export class AuthService {
+  [x: string]: any;
   constructor(
     private prisma: PrismaService,
     private jwt: JwtService,
